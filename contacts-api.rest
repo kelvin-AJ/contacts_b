@@ -1,0 +1,9 @@
+### Get all contacts
+GET https://contacts-b.onrender.com/
+Content-Type: application/json
+
+
+### Get a contact by ID
+### Send Get all Request then copy a contact id
+GET https://contacts-b.onrender.com/6820de22640cf2ec94063b42
+Content-Type: application/json
