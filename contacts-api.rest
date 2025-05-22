@@ -1,20 +1,29 @@
 ### 🏠 Welcome Route
-GET http://localhost:8080/
+GET https://contacts-b.onrender.com/
 
 ### 📄 Get All Contacts
-GET http://localhost:8080/contacts
+GET https://contacts-b.onrender.com/contacts
 
 ### 🔍 Get Contact by ID
-GET http://localhost:8080/contacts/123
+GET https://contacts-b.onrender.com/contacts/6820de22640cf2ec94063b42
 
 ### ➕ Add New Contact
-POST http://localhost:8080/contacts
+POST https://contacts-b.onrender.com/contacts
 Content-Type: application/json
 
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "example@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
+
 ### ✏️ Update Contact
-PUT http://localhost:8080/contacts/123
+PUT https://contacts-b.onrender.com/contacts/682f4397c7af9e8040af726d
 Content-Type: application/json
+
 
 
 ### ❌ Delete Contact
-DELETE http://localhost:8080/contacts/123
+DELETE https://contacts-b.onrender.com/contacts/682ec6ccca8513c06bda01c7

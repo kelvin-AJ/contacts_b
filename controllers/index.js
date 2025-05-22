@@ -16,8 +16,6 @@ module.exports = {
 
 const { ObjectId } = require("mongodb");
 const mongodb = require("../data/database");
-const { response } = require("express");
-const bodyParser = require("body-parser")
 
 module.exports = {
     async getAll(req, res) {
@@ -51,8 +49,8 @@ module.exports = {
         const result = await mongodb.getDatabase().db("contactsdb").collection("contacts").insertOne(newContact);
 
         if(result.acknowledged){
-            res.status(204)
-                .json()
+            res.status(201)
+                .json(result)
         }else{
             res.status(500)
                 .json(result.error || "Something went wrong with the server😶")
@@ -71,7 +69,7 @@ module.exports = {
         // console.log(result)
         if(result.acknowledged){
             res.status(204)
-                .send()
+                .json(result)
         }else{
             res.status(500)
                 .json(result.error || "Something went wrong with the server😶")
