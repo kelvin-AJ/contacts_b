@@ -1,9 +1,20 @@
-### Get all contacts
-GET https://contacts-b.onrender.com/
+### 🏠 Welcome Route
+GET http://localhost:8080/
+
+### 📄 Get All Contacts
+GET http://localhost:8080/contacts
+
+### 🔍 Get Contact by ID
+GET http://localhost:8080/contacts/123
+
+### ➕ Add New Contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+### ✏️ Update Contact
+PUT http://localhost:8080/contacts/123
 Content-Type: application/json
 
 
-### Get a contact by ID
-### Send Get all Request then copy a contact id
-GET https://contacts-b.onrender.com/6820de22640cf2ec94063b42
-Content-Type: application/json
+### ❌ Delete Contact
+DELETE http://localhost:8080/contacts/123
