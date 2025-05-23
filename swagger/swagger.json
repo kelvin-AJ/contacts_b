@@ -5,10 +5,10 @@
     "description": "Api for managing contacts for my CSE341",
     "version": "1.0.0"
   },
-  "host": "https://contacts-b.onrender.com",
+  "host": "contacts-b.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https", "http"
   ],
   "paths": {
     "/": {
