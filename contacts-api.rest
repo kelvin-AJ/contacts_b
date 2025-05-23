@@ -5,14 +5,14 @@ GET https://contacts-b.onrender.com/
 GET https://contacts-b.onrender.com/contacts
 
 ### 🔍 Get Contact by ID
-GET https://contacts-b.onrender.com/contacts/6820de22640cf2ec94063b42
+GET https://contacts-b.onrender.com/contacts/68304071f8c30f9a916eb5cd
 
 ### ➕ Add New Contact
 POST https://contacts-b.onrender.com/contacts
 Content-Type: application/json
 
 {
-  "firstName": "John",
+  "firstName": "James",
   "lastName": "Doe",
   "email": "example@gmail.com",
   "favoriteColor": "blue",
@@ -20,10 +20,14 @@ Content-Type: application/json
 }
 
 ### ✏️ Update Contact
-PUT https://contacts-b.onrender.com/contacts/682f4397c7af9e8040af726d
+PUT https://contacts-b.onrender.com/contacts/68304071f8c30f9a916eb5cd
 Content-Type: application/json
 
-
+{
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "email": "real@email.com"
+}
 
 ### ❌ Delete Contact
 DELETE https://contacts-b.onrender.com/contacts/682ec6ccca8513c06bda01c7
