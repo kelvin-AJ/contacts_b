@@ -10,7 +10,7 @@ const bodyParser = require("body-parser");
 
 const port = process.env.PORT || 3000
 
-app.use(cors())
+app.use(cors({ origin:"https://contacts-b.onrender.com/"}))
 app.use(bodyParser.json())
 app.use("/", router)
 
