@@ -61,8 +61,6 @@ module.exports = {
         const updatedContact = req.body
         const contactID = new ObjectId(req.params.id)
 
-        // console.log(updatedContact)
-
         const result = await mongodb.getDatabase().db("contactsdb").collection("contacts").updateOne({_id: contactID}, {$set : updatedContact});
 
 
